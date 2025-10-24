@@ -1,102 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda - 21 de Septiembre</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-
-    /* Sidebar */
-    .filter-sidebar {
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      font-size: 0.95rem;
-    }
-
-    .filter-sidebar h6 {
-      font-weight: 600;
-      margin-top: 20px;
-    }
-
-    .color-dot {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      margin: 5px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-    }
-
-    /* Tarjetas de productos */
-    .product-card {
-      border: 1px solid #eee;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      background-color: #fff;
-    }
-
-    .product-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transform: translateY(-3px);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-    }
-
-    .product-info {
-      padding: 15px;
-    }
-
-    .product-title {
-      font-weight: 500;
-      font-size: 0.95rem;
-      margin-bottom: 5px;
-    }
-
-    .product-price {
-      color: #0a0;
-      font-weight: 700;
-    }
-
-    .old-price {
-      text-decoration: line-through;
-      color: #888;
-      font-size: 0.9rem;
-      margin-right: 5px;
-    }
-
-    .promo-tag {
-      background-color: #1e2a78;
-      color: #fff;
-      font-size: 0.8rem;
-      padding: 3px 10px;
-      border-radius: 0 0 10px 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .color-options {
-      display: flex;
-      margin-top: 10px;
-    }
-  </style>
-</head>
-
 <body>
   <div class="container-fluid mt-4 px-5">
     <div class="row">
-      <!-- Sidebar filtros -->
       <div class="col-md-3">
         <div class="filter-sidebar">
           <h6>Ordenar por</h6>
@@ -113,7 +17,7 @@
             <a href="#">Mujer</a>
             <a href="#">Unisex</a>
           </div>
-
+          <!--
           <h6>Filtrar por Colores</h6>
           <div class="d-flex flex-wrap">
             <div class="color-dot" style="background-color:#fff;"></div>
@@ -127,7 +31,7 @@
             <div class="color-dot" style="background-color:#795548;"></div>
             <div class="color-dot" style="background-color:#000;"></div>
           </div>
-
+            -->
           <h6>Filtrar por Talle</h6>
           <select class="form-select form-select-sm mb-3">
             <option>Todo</option>
@@ -145,64 +49,55 @@
           </div>
         </div>
       </div>
-
       <!-- Productos -->
-      <div class="col-md-9">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <p class="text-muted small mb-0">Mostrando 1–15 de 189 resultados</p>
+
+
+      <!-- Producto 1 -->
+      <div class="col-md-3 col-card">
+        <div class="product-card position-relative">
+          <span class="promo-tag">21 Septiembre</span>
+          <img src="../../../assets/21-Septiembre/100.jpg" class="card-img-top" alt="Primer Producto">
+          <div class="card-body">
+            <div class="product-info">
+              <p class="product-title">Pantalón de Vestir Wide Leg – Art 16006</p>
+              <p class="product-price">$56.000</p>
+              <!-- <small class="text-muted">*Precio sin impuestos nacionales: $46.281</small> -->
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="row g-3">
-          <!-- Producto 1 -->
-          <div class="col-md-4">
-            <div class="product-card position-relative">
-              <span class="promo-tag">Evolución 21</span>
-              <img src="https://via.placeholder.com/400x400" alt="Producto 1">
-              <div class="product-info">
-                <p class="product-title">Pantalón de Vestir Wide Leg – Art 16006</p>
-                <p class="product-price">$56.000</p>
-                <small class="text-muted">*Precio sin impuestos nacionales: $46.281</small>
-              </div>
-            </div>
+      <!-- Producto 2 -->
+      <div class="col-md-3 col-card">
+        <div class="product-card position-relative">
+          <span class="promo-tag">21 Septiempre</span>
+          <img src="../../../assets/21-Septiembre/41003-401 ambo combinado 2.jpg" alt="Producto 2">
+          <div class="product-info">
+            <p class="product-title">Ambo Skin Flex Mujer – Art 11020</p>
+            <p>
+              <span class="old-price">$110.000</span>
+              <span class="product-price">$99.000</span>
+            </p>
+            <!-- <small class="text-muted">*Precio sin impuestos nacionales: $81.818</small> -->
           </div>
+        </div>
+      </div>
 
-          <!-- Producto 2 -->
-          <div class="col-md-4">
-            <div class="product-card position-relative">
-              <span class="promo-tag">Evolución 21</span>
-              <img src="https://via.placeholder.com/400x400" alt="Producto 2">
-              <div class="product-info">
-                <p class="product-title">Ambo Skin Flex Mujer – Art 11020</p>
-                <p>
-                  <span class="old-price">$110.000</span>
-                  <span class="product-price">$99.000</span>
-                </p>
-                <small class="text-muted">*Precio sin impuestos nacionales: $81.818</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Producto 3 -->
-          <div class="col-md-4">
-            <div class="product-card position-relative">
-              <span class="promo-tag">Evolución 21</span>
-              <img src="https://via.placeholder.com/400x400" alt="Producto 3">
-              <div class="product-info">
-                <p class="product-title">Ambo Tencel EcoFlex Mujer – Art 11019</p>
-                <p>
-                  <span class="old-price">$120.000</span>
-                  <span class="product-price">$108.000</span>
-                </p>
-                <small class="text-muted">*Precio sin impuestos nacionales: $89.256</small>
-              </div>
-            </div>
+      <!-- Producto 3 -->
+      <div class="col-md-3 col-card">
+        <div class="product-card position-relative">
+          <span class="promo-tag">21 Septiembre</span>
+          <img src="../../../assets/21-Septiembre/663-401web-B-800x1198.jpg" alt="Producto 3">
+          <div class="product-info">
+            <p class="product-title">Ambo Tencel EcoFlex Mujer – Art 11019</p>
+            <p>
+              <span class="old-price">$120.000</span>
+              <span class="product-price">$108.000</span>
+            </p>
+            <!-- <small class="text-muted">*Precio sin impuestos nacionales: $89.256</small> !-->
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-
