@@ -1,35 +1,43 @@
-<!-- Esto es una etiqueta de renderizado (Contenedor de contenido) -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
   <div class="container-fluid">
-    <!-- Aquí reemplazamos el texto "Navbar" por una imagen -->
+    <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="../assets/Logo-principal-BCS .png" alt="Logo-principal-BCS" width="200em">
+      <img src="../assets/Logo-principal-BCS .png" alt="Logo BCS" width="180em">
     </a>
+
+    <!-- Navbar -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Links -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/inicio">Inicio</a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">21 Septiembre</a></li>
-            <li><a class="dropdown-item" href="#">Nina Cofias</a></li>
-            <li><a class="dropdown-item" href="#">UNAMBOS</a></li>
+            <li><a class="dropdown-item" routerLink="/septiembre">21 Septiembre</a></li>
+            <li><a class="dropdown-item" routerLink="/nina">Nina Cofias</a></li>
+            <li><a class="dropdown-item" routerLink="/unambos">UNAMBOS</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contactos</a>
+          <a class="nav-link" routerLink="/contactos">Contactos</a>
         </li>
       </ul>
+
+      <!-- Iconos a la derecha -->
+      <div class="d-flex align-items-center gap-3 me-3">
+        <app-login></app-login>
+        <app-carrito></app-carrito>
+      </div>
     </div>
   </div>
 </nav>
+
+<router-outlet></router-outlet>
 <router-outlet></router-outlet>

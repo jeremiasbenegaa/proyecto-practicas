@@ -9,7 +9,13 @@ export class ContactoComponent implements OnInit {
 
   constructor() { }
 
+   onSubmit() {
+    // lógica al enviar el formulario
+    console.log('Formulario enviado');
+  }
+
   ngOnInit(): void {
   }
 
 }
+

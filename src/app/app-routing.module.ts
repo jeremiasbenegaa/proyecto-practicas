@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path:"contacto",component:ContactoComponent
   },
+  { path: 'productos', component: ProductosComponent },
+  { path: 'contactos', component: ContactoComponent },
+  { path: '', redirectTo: '/productos', pathMatch: 'full' },
+  { path: '**', redirectTo: '/productos' }
   //1- Ruta raiz 
 ];
 
@@ -30,3 +34,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+

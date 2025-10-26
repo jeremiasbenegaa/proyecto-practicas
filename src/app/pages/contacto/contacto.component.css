@@ -1,0 +1,61 @@
+.contactos-container {
+  max-width: 800px;       /* ancho máximo que desees */
+  margin: 0 auto;         /* para centrar horizontalmente */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contactos-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+form .row .col {
+  flex: 1;
+  min-width: 200px;       /* para que se adapten en mobile */
+  padding: 0 10px;
+}
+
+form .row.full-width .col {
+  flex: 1 1 100%;
+  padding: 0 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 30px;
+  font-size: 1rem;
+}
+
+
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e5e5e5;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+}

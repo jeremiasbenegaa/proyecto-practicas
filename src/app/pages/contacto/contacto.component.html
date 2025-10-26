@@ -1,1 +1,79 @@
-<p>contacto works!</p>
+<div class="contactos-container">
+    
+    <h2>FORMULARIO</h2>
+    <h6>(* Es obligatorio)</h6>
+    
+    <!-- Campo obligatorio -->
+    
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="row">
+            <div class="col">
+                <input name="correo" ngModel required placeholder="Correo*" type="email">
+            </div>
+            <div class="col">
+                <input name="nombre" ngModel required placeholder="Nombre*" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input name="apellido" ngModel required placeholder="Apellido*" type="text">
+            </div>
+            <div class="col">
+                <input name="localidad" ngModel required placeholder="Localidad*" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input name="provincia" ngModel required placeholder="Provincia*" type="text">
+            </div>
+            <div class="col">
+                <input name="celular" ngModel required placeholder="Celular*" type="tel">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <select name="tipoCliente" ngModel required>
+                    <option value="">Tipo de Cliente*</option>
+                    <option value="empresa">Empresa</option>
+                    <option value="particular">Particular</option>
+                </select>
+            </div>
+            <div class="col">
+                <input name="numeroPedido" ngModel placeholder="Número de pedido" type="text">
+            </div>
+        </div>
+        <div class="row full-width">
+            <textarea name="mensaje" ngModel required placeholder="Mensaje*"></textarea>
+        </div>
+
+        <!-- Se habilita boton "enviar" una vez que se complete el formulario -->
+
+        <button type="submit" [disabled]="!contactForm.valid">Enviar</button>
+    </form>
+</div>
+
+<footer class="footer mt-4 py-2 bg-light border-top">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="text-muted small mb-0">
+            © 2025 - BCS Ambos Indumentaria - Todos los derechos reservados
+        </p>
+
+        <div class="d-flex gap-2">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5492995357279" target="_blank" class="social-icon">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://web.facebook.com/people/BCS-AMBOS-indumentaria/61558618131265/" target="_blank"
+                class="social-icon">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/bcsbel" target="_blank" class="social-icon">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
