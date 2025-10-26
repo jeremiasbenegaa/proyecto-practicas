@@ -1,47 +1,28 @@
-<body>
-  <h4 class="text-center fw-bold fs-2 mt-4 mb-4">
-    ¡LÍNEAS CON LAS QUE TRABAJAMOS!
-  </h4>
+<!-- Carousel -->
 
-  <!--BANNERS PRINCIPALES DE MARCAS-->
-  <section class="banner-principal position-relative">
-    <img src="../../../assets/Carrousel/banner-evolucion-ambos-21-1-1780x599.jpg" alt="Banner principal BCS"
-      class="img-fluid w-100 banner-img">
-  </section>
-  <section class="banner-principal position-relative">
-    <img src="../../../assets/Nina-Cofias/banner-nina-cofiass.jpg" alt="Banner Nina Cofias"
-      class="img-fluid w-100 banner-img">
-  </section>
-  <section class="banner-principal position-relative">
-    <img src="../../../assets/UNAMBOS/banner-unambo.jpg" alt="Banner UNAMBO" class="img-fluid w-100 banner-img">
-  </section>
-  <footer class="footer mt-4 py-2 bg-light border-top">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p class="text-muted small mb-0">
-        © 2025 - BCS Ambos Indumentaria - Todos los derechos reservados
-      </p>
 
-      <div class="d-flex gap-2">
-        <!-- WhatsApp -->
-        <a href="https://wa.me/5492995357279" target="_blank" class="social-icon">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-
-        <!-- Facebook -->
-        <a href="https://web.facebook.com/people/BCS-AMBOS-indumentaria/61558618131265/" target="_blank"
-          class="social-icon">
-          <i class="bi bi-facebook"></i>
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/bcsbel" target="_blank" class="social-icon">
-          <i class="bi bi-instagram"></i>
-        </a>
-
-        <!-- Botón de arrepentimiento -->
-        <a href="/boton-arrepentimiento" class="btn btn-outline-secondary btn-sm fw-semibold">Botón de
-          Arrepentimiento</a>
-      </div>
+<h4 class="text-center fw-bold fs-2 mt-4 mb-4">
+  ¡LÍNEAS CON LAS QUE TRABAJAMOS!
+</h4>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="../../../assets/Carrousel/banner-evolucion-ambos-21-1-1780x599.jpg" 
+        alt="Banner principal BCS">
     </div>
-  </footer>
-</body>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../../../assets/Nina-Cofias/banner-nina-cofiass.jpg"  alt="Banner Nina Cofias">
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/UNAMBOS/banner-unambo.jpg" alt="Banner UNAMBO">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

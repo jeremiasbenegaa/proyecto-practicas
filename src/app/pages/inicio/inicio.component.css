@@ -68,7 +68,7 @@ body {
 }
 
 .promo-tag {
-    background-color: #e30613;
+    background-color: #510822;
     color: #fff;
     font-size: 0.8rem;
     padding: 3px 10px;
@@ -81,24 +81,6 @@ body {
 .color-options {
     display: flex;
     margin-top: 10px;
-}
-
-.footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #e5e5e5;
-
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
-    text-align: center;
-    padding: 15px 0;
-    z-index: 1000;
 }
 
 
@@ -119,12 +101,14 @@ body {
 .social-icon:hover {
     background-color: #333;
     color: #fff;
+    color: #198754;
+    /* Verde tipo WhatsApp */
 }
 
 .carousel-inner img {
-    width: auto;
+    width: 100%;
     /* Mantiene proporción */
-    max-width: 80%;
+    /* max-width: 80%; */
     /* Reduce el ancho general */
     height: 400px;
     /* Ajusta el alto deseado */
@@ -136,19 +120,10 @@ body {
     /* Opcional: bordes redondeados */
 }
 
-.footer {
-    font-size: 0.85rem;
-    /* Texto más pequeño */
-}
 
 .social-icon {
     font-size: 1.1rem;
     /* Tamaño del ícono */
     color: #6c757d;
     transition: color 0.2s ease;
-}
-
-.social-icon:hover {
-    color: #198754;
-    /* Verde tipo WhatsApp */
 }
