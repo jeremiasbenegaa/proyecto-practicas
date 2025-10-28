@@ -8,7 +8,7 @@
     <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
         <div class="row">
             <div class="col">
-                <input name="correo" ngModel required placeholder="Correo*" type="email">
+                <input name="apellido" ngModel required placeholder="Apellido*" type="text">
             </div>
             <div class="col">
                 <input name="nombre" ngModel required placeholder="Nombre*" type="text">
@@ -16,7 +16,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <input name="apellido" ngModel required placeholder="Apellido*" type="text">
+                <input name="correo" ngModel required placeholder="Correo*" type="email">
             </div>
             <div class="col">
                 <input name="localidad" ngModel required placeholder="Localidad*" type="text">
@@ -39,15 +39,14 @@
                 </select>
             </div>
             <div class="col">
-                <input name="numeroPedido" ngModel placeholder="Número de pedido" type="text">
+                <input name="numeroPedido" ngModel placeholder="Número de pedido*" type="text">
             </div>
         </div>
-        <div class="row full-width">
+        <div class="row full-width" >
             <textarea name="mensaje" ngModel required placeholder="Mensaje*"></textarea>
         </div>
 
         <!-- Se habilita boton "enviar" una vez que se complete el formulario -->
-
         <button type="submit" [disabled]="!contactForm.valid">Enviar</button>
     </form>
 </div>
